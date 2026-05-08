@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
+/* ─── Design Tokens (matching spencer-ventures/index.html) ─────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:            oklch(97% 0.010 70);
+  --bg-raised:     oklch(98.5% 0.008 70);
+  --bg-card:       oklch(99.5% 0.005 70);
+  --bg-card-hover: oklch(98% 0.008 70);
+  --bg-detail:     oklch(96.5% 0.010 68);
+  --bg-chip:       oklch(95.5% 0.012 68);
+
+  --border:        oklch(82% 0.012 65 / 0.70);
+  --border-subtle: oklch(86% 0.010 65 / 0.55);
+  --border-focus:  oklch(65% 0.030 65 / 0.55);
+
+  --text-primary:   oklch(22% 0.012 60);
+  --text-secondary: oklch(38% 0.014 62);
+  --text-muted:     oklch(52% 0.012 62);
+  --text-faint:     oklch(62% 0.010 62);
+
+  --accent:        oklch(62% 0.145 72);
+  --accent-dim:    oklch(62% 0.145 72 / 0.10);
+  --accent-border: oklch(62% 0.145 72 / 0.30);
+
+  --stage-launched:    oklch(46% 0.15 145);
+  --stage-launched-bg: oklch(46% 0.15 145 / 0.10);
+  --stage-pre-launch:  oklch(46% 0.14 240);
+  --stage-pre-launch-bg: oklch(46% 0.14 240 / 0.10);
+  --stage-research:    oklch(52% 0.14 72);
+  --stage-research-bg: oklch(52% 0.14 72 / 0.10);
+  --stage-idea:        oklch(48% 0.010 60);
+  --stage-idea-bg:     oklch(48% 0.010 60 / 0.10);
+  --stage-paused:      oklch(52% 0.13 42);
+  --stage-paused-bg:   oklch(52% 0.13 42 / 0.10);
+  --stage-shelved:     oklch(48% 0.14 20);
+  --stage-shelved-bg:  oklch(48% 0.14 20 / 0.10);
+
+  --priority-high:   oklch(50% 0.18 25);
+  --priority-medium: oklch(52% 0.14 72);
+  --priority-low:    oklch(52% 0.010 60);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Tailwind compat */
+  --background: oklch(97% 0.010 70);
+  --foreground: oklch(22% 0.012 60);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }

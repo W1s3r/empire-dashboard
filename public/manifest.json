@@ -1,11 +1,11 @@
 {
-  "name": "Empire Dashboard",
-  "short_name": "Empire",
-  "description": "AI-operated business portfolio management",
+  "name": "Spencer Ventures",
+  "short_name": "Legacy",
+  "description": "Spencer family business portfolio — shared view",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#09090b",
-  "theme_color": "#D97706",
+  "background_color": "#f7f2ea",
+  "theme_color": "#b07d3a",
   "orientation": "portrait-primary",
   "icons": [
     {
