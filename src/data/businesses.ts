@@ -11,7 +11,7 @@ export const SEED_BUSINESSES: Business[] = [
       'Aftermarket gesture-sensing smartwatch band using EMG + IMU sensors. Adds gesture-based smart home control to existing Apple Watch / Galaxy Watch.',
     status: 'research',
     category: 'Hardware / Wearables',
-    visibility: 'empire',
+    visibility: 'both',
     metrics: {
       stage: 'Concept Design',
       priority: 'medium',
@@ -27,7 +27,7 @@ export const SEED_BUSINESSES: Business[] = [
       'Affordable AI-powered patent drafting and filing service for independent inventors, startups, and small businesses.',
     status: 'pre-launch',
     category: 'Legal Tech / SaaS',
-    visibility: 'empire',
+    visibility: 'both',
     metrics: {
       entity: 'Patent Launch LLC (VA)',
       website: 'patentlaun.ch',
@@ -76,7 +76,7 @@ export const SEED_BUSINESSES: Business[] = [
       'Spatial smart home control company — AR/spatial interfaces for controlling smart home devices. Virginia LLC. Parent entity for Smart Strap hardware line.',
     status: 'pre-launch',
     category: 'Hardware / Smart Home',
-    visibility: 'empire',
+    visibility: 'both',
     metrics: {
       entity: 'Smart Home Tech, LLC (VA)',
       priority: 'medium',
@@ -92,7 +92,7 @@ export const SEED_BUSINESSES: Business[] = [
       'AI-powered business launch assistance — iOS/watchOS app concept. Explores AI-driven startup guidance for early-stage founders.',
     status: 'idea',
     category: 'SaaS / Mobile',
-    visibility: 'empire',
+    visibility: 'both',
     metrics: {
       priority: 'low',
       stage: 'On hold',
@@ -108,7 +108,7 @@ export const SEED_BUSINESSES: Business[] = [
       'Premium wedding venue on 300-acre property in Culpeper County, VA (~1.25 hrs from DC). $3M acquisition target with Cate as in-house coordinator.',
     status: 'research',
     category: 'Real Estate / Events',
-    visibility: 'both',
+    visibility: 'empire',
     metrics: {
       listing: 'MLS #VACU2010668',
       asking_price: '$3M',
